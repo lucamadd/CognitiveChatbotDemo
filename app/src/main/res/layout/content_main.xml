@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dddddd"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/disclaimer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/demo_disclaimer"
+            android:fontFamily="@font/proximanovaregular"
+            android:justificationMode="inter_word"
+            android:textSize="18dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/messages_view"
+        android:layout_weight="2"
+        android:clickable="false"
+        android:divider="#dddddd"
+        android:dividerHeight="0dp"
+        android:layout_height="0dp">
+    </ListView>
+    <LinearLayout
+        android:id="@+id/layout_chatbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:minHeight="48dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/edittext_chatbox"
+            android:hint="Scrivi un messaggio"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/proximanovaregular"
+            android:maxLines="6"/>
+
+        <Button
+            android:id="@+id/button_chatbox_send"
+            android:textSize="14dp"
+            android:fontFamily="@font/proximanovaregular"
+            android:background="@drawable/ic_send"
+            android:clickable="true"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:onClick="sendMessage"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cognitive Chatbot Demo</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="demo_disclaimer">Benvenuto! Questa versione è una demo, per cui alcune
+    funzioni, come l\'autocompletamento, le risposte multiple e il controllo ortografico
+    non sono supportate.\n\nScrivi un messaggio qui sotto per iniziare.</string>
+</resources>

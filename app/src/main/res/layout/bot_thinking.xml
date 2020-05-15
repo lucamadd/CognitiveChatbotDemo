@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:id="@+id/message_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="12dp"
+    android:layout_marginBottom="20dp">
+
+    <com.eyalbira.loadingdots.LoadingDots
+        android:id="@+id/loading_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        app:LoadingDots_loop_duration="700"
+        app:LoadingDots_jump_height="4dp"
+        app:LoadingDots_dots_size="6dp"
+        app:LoadingDots_dots_space="2dp"
+        />
+
+</RelativeLayout>
